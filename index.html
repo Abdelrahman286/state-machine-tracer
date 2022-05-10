@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>state machine app</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      input {
+        display: inline-block;
+      }
+      .table {
+        margin-top: 20px;
+      }
+      .head-row,
+      .row {
+        background: #334756;
+        display: flex;
+      }
+      .final-head {
+        background: #082032;
+        text-align: center;
+        width: 40px;
+      }
+      .state-head {
+        text-align: center;
+        width: 100px;
+      }
+      .input-head {
+        text-align: left;
+        width: 300px;
+      }
+      .input-value {
+        width: 50px;
+      }
+      .table-box {
+        width: 30px;
+      }
+      body {
+        background: #161616;
+        color: #ecdbba;
+      }
+      .msg {
+        border: 1px solid white;
+        font-weight: 100;
+        margin: 40px;
+        padding: 20px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .check-result {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+      }
+      .state-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ecdbba;
+      }
+      .line {
+        width: 100px;
+        height: 3px;
+        background: #ecdbba;
+        color: #c84b31;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .accept-destination {
+        padding: 20px;
+
+        text-align: center;
+        font-size: 40px;
+        border: 1px solid #c84b31;
+      }
+      .p-10 {
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>State Machine app (EC-372)</h2>
+    <hr />
+    <label for="">no.of input : </label>
+    <input type="text" name="" id="" value="4" class="input-number" />
+    <label for="">no.of states :</label>
+    <input type="text" name="" id="" value="3" class="states-number" />
+    <button class="create">create</button>
+
+    <div class="table">
+      <div class="msg">
+        <h1>Enter the number of states & inputs</h1>
+        <h6>
+          use the check button beside every state to mark it as a final state
+        </h6>
+      </div>
+    </div>
+
+    <hr />
+    <br />
+    <br />
+    <label class="p-10">String :</label>
+    <input type="text" class="my-string" />
+    <button class="check">check</button>
+    <hr />
+    <br />
+    <div class="accept-destination"></div>
+    <div class="check-result"></div>
+
+    <script src="./script.js"></script>
+    <script src="./ui.js"></script>
+  </body>
+</html>
